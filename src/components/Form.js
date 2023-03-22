@@ -1,4 +1,5 @@
 import { Component } from "react";
+import styles from 'css/Form.module.css'
 
 class Form extends Component {
 
@@ -8,6 +9,7 @@ class Form extends Component {
         this.initialState = {
             title: '',
             description: '',
+            completed: false,
         }
 
         this.state = this.initialState;
@@ -24,8 +26,8 @@ class Form extends Component {
         event.preventDefault();
 
         // 至少输入待办事件的标题才继续提交
-        if(!event.target.title.value)return;
-        
+        if (!event.target.title.value) return;
+
         this.props.handleSubmit(this.state);
         this.setState(this.initialState);
     }
@@ -34,12 +36,37 @@ class Form extends Component {
         const { title, description } = this.state;
 
         return (
-            <form onSubmit={this.onFormSubmit}>
-                <label>title:</label>
-                <input value={title} name="title" onChange={this.handleChange}></input>
-                <label>description:</label>
-                <input value={description} name="description" onChange={this.handleChange}></input>
-                <button>Submit</button>
+            <form onSubmit={this.onFormSubmit} className={styles['form--normal']}>
+                <div className={styles['rowOneThirds--normal']}>
+                    <label 
+                        htmlFor="title"
+                        className={styles['label--normal']}
+                    >title:</label>
+                    <input
+                        value={title}
+                        name="title"
+                        id="title"
+                        onChange={this.handleChange}
+                    ></input>
+                </div>
+                <div className={styles['rowOneThirds--normal']}>
+                    <label
+                        htmlFor="description"
+                        className={styles['label--normal']}
+                    >description:</label>
+                    <input
+                        value={description}
+                        name="description"
+                        id="description"
+                        onChange={this.handleChange}
+                    ></input>
+                </div>
+                <div className={styles['rowOneThirds--normal']}>
+                    <button 
+                        className={styles['button--normal']}
+                        type="submit"
+                    >Submit</button>
+                </div>
             </form>
         );
     }

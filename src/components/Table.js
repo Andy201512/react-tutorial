@@ -1,10 +1,12 @@
+import styles from "css/Table.module.css"
+
 const TableHeader = () => {
     return (
         <thead>
             <tr>
-                <th>To-do</th>
-                <th>Description</th>
-                <th>Complete</th>
+                <th className={styles['thOneThirds--normal']}>To-do</th>
+                <th className={styles['thOneThirds--normal']}>Description</th>
+                <th className={styles['thOneThirds--normal']}>Complete</th>
             </tr>
         </thead>
     );
@@ -14,9 +16,12 @@ const TableBody = (props) => {
     const TrItem = props.toDoList.map((row, index) => {
         return (
             <tr key={index}>
-                <td>{row.title}</td>
-                <td>{row.description}</td>
-                <td><button onClick={() => {console.log(`${row.title}已完成`)}}>完成</button></td>
+                <td className={`${styles['tdAlignCenter--normal']} ${row.completed ? styles['td--lineThrough'] : ''}`}>{row.title}</td>
+                <td className={`${styles['tdAlignCenter--normal']} ${row.completed ? styles['td--lineThrough'] : ''}`}>{row.description}</td>
+                <td className={styles['tdAlignCenter--normal']}>
+                    <button onClick={() => props.handleCompleteItem(index)}>{row.completed ? '未完' : '完成'}</button>
+                    <button onClick={() => props.handleRemoveItem(index)}>移除</button>
+                </td>
             </tr>
         );
     });
@@ -29,9 +34,13 @@ const TableBody = (props) => {
 
 function Table(props) {
     return (
-        <table>
+        <table className={styles['table--normal']}>
             <TableHeader />
-            <TableBody toDoList={props.toDoList}/>
+            <TableBody 
+                toDoList={props.toDoList} 
+                handleCompleteItem={props.handleCompleteItem}
+                handleRemoveItem={props.handleRemoveItem}
+            />
         </table>
     );
 }

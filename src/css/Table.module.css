@@ -1,0 +1,15 @@
+.table--normal{
+    width: 100%;
+}
+
+.thOneThirds--normal{
+    width: 33.33%;
+}
+
+.tdAlignCenter--normal{
+    text-align: center;
+}
+
+.td--lineThrough{
+    text-decoration: line-through;
+}

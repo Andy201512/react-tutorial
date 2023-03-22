@@ -1,0 +1,18 @@
+.form--normal {
+    width: 100%;
+    display: flex;
+}
+
+.rowOneThirds--normal {
+    flex: 1 1 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.label--normal{
+    margin-right: 8px;
+}
+
+.button--normal {
+    padding-bottom: 2px;
+}
