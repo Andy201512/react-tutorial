@@ -63,7 +63,6 @@ class Form extends Component {
                 </div>
                 <div className={styles['rowOneThirds--normal']}>
                     <button 
-                        className={styles['button--normal']}
                         type="submit"
                     >Submit</button>
                 </div>

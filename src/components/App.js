@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { read, utils, writeFileXLSX } from 'xlsx';
-import styles from "css/App.module.css"
+import 'css/index.css';
+import styles from 'css/App.module.css';
 import Table from "./Table";
 import Form from "./Form";
 
@@ -73,6 +74,11 @@ class App extends Component {
     return (
       <div className={styles['app--normal']} >
         <Form handleSubmit={this.handleSubmit}></Form>
+        <Table
+          toDoList={this.state.toDoList}
+          handleCompleteItem={this.handleCompleteItem}
+          handleRemoveItem={this.handleRemoveItem}
+        ></Table>
         <div className={styles['rowDiv--normal']}>
           <div className={styles['colDiv--normal']}>
             <input
@@ -94,11 +100,6 @@ class App extends Component {
             >清除</button>
           </div>
         </div>
-        <Table
-          toDoList={this.state.toDoList}
-          handleCompleteItem={this.handleCompleteItem}
-          handleRemoveItem={this.handleRemoveItem}
-        ></Table>
       </div>
     );
   }
