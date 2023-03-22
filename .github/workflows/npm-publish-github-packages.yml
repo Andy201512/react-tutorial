@@ -2,9 +2,11 @@ name: Build & deploy react-demo-with-github-actions
 
 on:
   push:
-    branches: [master]
+    branches: 
+      - 'main'
   pull_request:
-    branches: [master]
+    branches: 
+      - 'main'
 
 jobs:
   build:
