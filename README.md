@@ -71,5 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # 还准备实现的优化或功能
 1. ~~样式调整，点完成按钮时当行被划横线~~
-2. 导入导出
+2. ~~导入导出~~
 3. ~~清空列表按钮~~
+4. 把样式调整得好看好用

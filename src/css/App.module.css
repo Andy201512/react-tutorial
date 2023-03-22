@@ -1,3 +1,14 @@
 .app--normal{
     width: 100%;
 }
+
+.rowDiv--normal{
+    width: 100%;
+    display: flex;
+}
+
+.colDiv--normal {
+    flex: 1 1 auto;
+    vertical-align: middle;
+    text-align: center;
+}
