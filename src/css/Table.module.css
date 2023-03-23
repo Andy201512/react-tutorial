@@ -4,10 +4,12 @@
 
 .thOneThirds--normal{
     width: 33.33%;
+    border-bottom: 2px solid #dedede;
 }
 
 .tdAlignCenter--normal{
     text-align: center;
+    border-bottom: 1px solid #dedede;
 }
 
 .td--lineThrough{

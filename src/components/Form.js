@@ -41,7 +41,7 @@ class Form extends Component {
                     <label 
                         htmlFor="title"
                         className={styles['label--normal']}
-                    >title:</label>
+                    >标题:</label>
                     <input
                         value={title}
                         name="title"
@@ -54,7 +54,7 @@ class Form extends Component {
                     <label
                         htmlFor="description"
                         className={styles['label--normal']}
-                    >description:</label>
+                    >描述:</label>
                     <input
                         value={description}
                         name="description"
@@ -66,7 +66,7 @@ class Form extends Component {
                 <div className={styles['rowOneThirds--normal']}>
                     <button 
                         type="submit"
-                    >Submit</button>
+                    >提交</button>
                 </div>
             </form>
         );

@@ -4,9 +4,9 @@ const TableHeader = () => {
     return (
         <thead>
             <tr>
-                <th className={styles['thOneThirds--normal']}>To-do</th>
-                <th className={styles['thOneThirds--normal']}>Description</th>
-                <th className={styles['thOneThirds--normal']}>Complete</th>
+                <th className={styles['thOneThirds--normal']}>待办标题</th>
+                <th className={styles['thOneThirds--normal']}>详细描述</th>
+                <th className={styles['thOneThirds--normal']}>完成状态</th>
             </tr>
         </thead>
     );
