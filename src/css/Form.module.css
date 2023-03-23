@@ -10,8 +10,12 @@
     width: 50%;
 }
 
-.label--normal{
+.label--normal {
     display: inline-block;
     margin-right: 8px;
     width: 30%;
+}
+
+.input--normal {
+    width: 60%;
 }

@@ -3,12 +3,11 @@
 }
 
 .rowDiv--normal{
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     display: flex;
 }
 
 .colDiv--normal {
     flex: 1 1 auto;
-    vertical-align: middle;
-    text-align: center;
 }

@@ -9,8 +9,8 @@ function UploadButton(props) {
                 onChange={props.handleImport}
                 className={styles['uploadInput--normal']}
             />
-            <div>
-                <span className={styles['uploadShowBox--normal']}>上传</span>
+            <div className={styles['uploadShowBox--normal']}>
+                <span className={styles['uploadSpan--normal']}>上传</span>
             </div>
         </div>
     );

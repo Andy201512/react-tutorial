@@ -47,6 +47,7 @@ class Form extends Component {
                         name="title"
                         id="title"
                         onChange={this.handleChange}
+                        className={styles['input--normal']}
                     ></input>
                 </div>
                 <div className={styles['rowOneThirds--normal']}>
@@ -59,6 +60,7 @@ class Form extends Component {
                         name="description"
                         id="description"
                         onChange={this.handleChange}
+                        className={styles['input--normal']}
                     ></input>
                 </div>
                 <div className={styles['rowOneThirds--normal']}>
