@@ -1,14 +1,17 @@
 .form--normal {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .rowOneThirds--normal {
-    display: flex;
-    flex-direction: row;
-    vertical-align: middle;
-    text-align: center;
+    width: 50%;
 }
 
 .label--normal{
+    display: inline-block;
     margin-right: 8px;
+    width: 30%;
 }
