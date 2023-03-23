@@ -6,7 +6,7 @@ const TableHeader = () => {
             <tr>
                 <th className={styles['thOneThirds--normal']}>待办标题</th>
                 <th className={styles['thOneThirds--normal']}>详细描述</th>
-                <th className={styles['thOneThirds--normal']}>完成状态</th>
+                <th className={styles['thOneThirds--normal']}>操作按钮</th>
             </tr>
         </thead>
     );
@@ -19,8 +19,14 @@ const TableBody = (props) => {
                 <td className={`${styles['tdAlignCenter--normal']} ${row.completed ? styles['td--lineThrough'] : ''}`}>{row.title}</td>
                 <td className={`${styles['tdAlignCenter--normal']} ${row.completed ? styles['td--lineThrough'] : ''}`}>{row.description}</td>
                 <td className={styles['tdAlignCenter--normal']}>
-                    <button onClick={() => props.handleCompleteItem(index)}>{row.completed ? '未完' : '完成'}</button>
-                    <button onClick={() => props.handleRemoveItem(index)}>移除</button>
+                    <button 
+                        onClick={() => props.handleCompleteItem(index)}
+                        className={styles['tdButton--normal']}
+                    >{row.completed ? '未完' : '完成'}</button>
+                    <button 
+                        onClick={() => props.handleRemoveItem(index)}
+                        className={styles['tdButton--normal']}
+                    >移除</button>
                 </td>
             </tr>
         );

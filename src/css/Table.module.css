@@ -15,3 +15,7 @@
 .td--lineThrough{
     text-decoration: line-through;
 }
+
+.tdButton--normal{
+    margin: 4px;
+}
