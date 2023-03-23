@@ -19,3 +19,9 @@
 .input--normal {
     width: 60%;
 }
+
+.buttonMaskDiv--normal{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}

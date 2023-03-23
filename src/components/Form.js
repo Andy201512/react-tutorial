@@ -38,7 +38,7 @@ class Form extends Component {
         return (
             <form onSubmit={this.onFormSubmit} className={styles['form--normal']}>
                 <div className={styles['rowOneThirds--normal']}>
-                    <label 
+                    <label
                         htmlFor="title"
                         className={styles['label--normal']}
                     >标题:</label>
@@ -64,9 +64,11 @@ class Form extends Component {
                     ></input>
                 </div>
                 <div className={styles['rowOneThirds--normal']}>
-                    <button 
-                        type="submit"
-                    >提交</button>
+                    <div className={styles['buttonMaskDiv--normal']}>
+                        <button
+                            type="submit"
+                        >提交</button>
+                    </div>
                 </div>
             </form>
         );
