@@ -1,0 +1,27 @@
+/*   
+    上传按钮实现要点：
+    1、外层div位置设为relative，原始input框位置设为absolute
+    2、input框设为透明
+ */
+.uploadBox--normal {
+    /*  */
+    position: relative;
+    display: inline-block;
+}
+
+.uploadInput--normal {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+}
+
+.uploadShowBox--normal {
+    font-size: 14px;
+    color: #fff;
+    background-color: rgb(49, 150, 233);
+    border-radius: 3px;
+    padding: 2.20px 6px;
+}
